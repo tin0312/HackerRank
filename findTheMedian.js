@@ -1,5 +1,5 @@
 
-
+// Find the median of an array, median is the middle element of an array
 function findTheMedian(arr){
         //Sort the array
         const sortedArray = arr.sort((a,b) => a-b)
