@@ -13,14 +13,15 @@ is lowercased with only letters and numbers.
 const password = "9338dsabbbadjdjdj2sdfdfdf282ff8fdsd888ss8cfgfg332q23";
 
 function removeDupeChars(chars) {
-  // Initiate a set to store unique values
-  let nonDuplicate = new Set();
-  // split the passord into an array of letters
-  let splittedPassword = chars.split("");
-  for (let i = 0; i < splittedPassword.length; i++) {
-    nonDuplicate.add(splittedPassword[i]);
-  }
-  return Array.from(nonDuplicate).join("");
+  // // Initiate a set to store unique values
+  // let nonDuplicate = new Set();
+  // // split the passord into an array of letters
+  // let splittedPassword = chars.split("");
+  // for (let i = 0; i < splittedPassword.length; i++) {
+  //   nonDuplicate.add(splittedPassword[i]);
+  // }
+  // return Array.from(nonDuplicate).join("");
+  return [...new Set(chars)]
 }
 
 console.log(removeDupeChars(password));
