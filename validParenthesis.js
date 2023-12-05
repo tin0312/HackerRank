@@ -27,7 +27,7 @@ const isWellForm = (string) => {
     return stack.length === 0
 }
 
-console.log(isWellForm("{}[]("))
+console.log(isWellForm("{}[]"))
 
 /*
 
