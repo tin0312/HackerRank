@@ -20,3 +20,31 @@ const isValidrome = (string) => {
 
 //example
 console.log(isValidrome("hiih"))
+
+/*
+
+Use 2 pointers to check of there is a valid Validrome
+
+function palindrome(str) {
+  //remove punctuation, case and spacing
+  const cleanString = str.replace(/[\W_]/g, "").toLowerCase();
+  //use 2 pointers to check if the string is valid palindrome
+  let i = 0
+  let j = cleanString.length - 1
+   while (i < j) {
+    if (cleanString[i] !== cleanString[j]) {
+      return false;
+    }
+    i++;
+    j--;
+  }
+
+  return true;
+}
+
+palindrome("eye");
+
+
+
+*/
+
